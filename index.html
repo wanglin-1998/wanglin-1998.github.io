@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+	</style>
+	<body>
+		<h3 id="abstract">Abstract</h3>
+		<p>Below is the audio sample sharing on our proposed W2VC model as well as three baseline models: VQ-VAE, CTC-VQ-VAE, FragmentVC. Four pairs of transformation results are selected for each model. The male speaker “bdl” and the female speaker “slt” were selected as the target
+		speakers. The male speaker “rms” and the female speaker “clb” were selected as the source speakers. Four transformations were applied to each model :rms→slt(male to female),
+		rms→bdl(male to male), clb→slt(female to female), clb→bdl(female to male)</p>
+		<div>
+			
+			<table border="2" cellpadding="5" cellspacing="0" bgcolor="#ffffff" align="center" style="margin-top:200px">
+				<tr>
+					<th align = "left">Four Pairs</th>
+					<th align = "left">Source</th>
+					<th align = "left">Target</th>
+					<th align = "left">W2VC_Converted</th>
+					<th align = "left">VQ-VAE_Converted</th>
+					<th align = "left">CTC-VQ-VAE_Converted</th>
+					<th align = "left">FragmentVC_Converted</th>
+				</tr>
+				<tr>
+					<td> <label align = "center">clb-bdl</label></td>
+					<td>
+					<audio controls="controls">
+					    <source src="./clb_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./bdl_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./W2VC/clb40.to.bdl40/clb_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./VQ-VAE/clb.to.bdl/clb_arctic_a0002_mel.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./CTC-VQ-VAE/clb40.to.bdl40/clb_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./FragmentVC/clb40.to.bdl40/arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+				</tr>
+				<tr>
+					<td> <label align = "center">clb-slt</label></td>
+					<td>
+					<audio controls="controls">
+					    <source src="./clb_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./slt_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./W2VC/clb40.to.slt40/clb_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./VQ-VAE/clb.to.slt/clb_arctic_a0002_mel.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./CTC-VQ-VAE/clb40.to.slt40/clb_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./FragmentVC/clb40.to.slt40/arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+				</tr>
+				<tr>
+					<td> <label align = "center">rms-bdl</label></td>
+					<td>
+					<audio controls="controls">
+					    <source src="./rms_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./bdl_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					<source src="./W2VC/rms40.to.bdl40/rms_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./VQ-VAE/rms.to.bdl/rms_arctic_a0002_mel.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./CTC-VQ-VAE/rms40.to.bdl40/rms_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./FragmentVC/rms40.to.bdl40/arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+				</tr>
+				<tr>
+					<td> <label align = "center">rms-slt</label></td>
+					<td>
+					<audio controls="controls">
+					    <source src="./rms_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					    <source src="./slt_arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+					<source src="./W2VC/rms40.to.slt40/rms_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./VQ-VAE/rms.to.slt/rms_arctic_a0002_mel.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./CTC-VQ-VAE/rms40.to.slt40/rms_arctic_a0002_mel_generated.wav" type="audio/mpeg">		            
+					</audio></td>
+					<td><audio controls="controls">
+						<source src="./FragmentVC/rms40.to.slt40/arctic_a0002.wav" type="audio/mpeg">		            
+					</audio></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
